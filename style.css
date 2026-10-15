@@ -1,0 +1,130 @@
+
+   /* 1. Global Page Background and Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. The Main Floating App Box */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Main Titles */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* 4. Budget Setup Row Styling */
+.setup-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* 5. The Number Input Box */
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* 6. The "Set Budget" Button */
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+/* 7. Button Hover Effect */
+button:hover {
+    background-color: #27ae60;
+}
+
+/* 8. Dashboard Summary Widgets */
+.dashboard {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #34495e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* 9. Daily Spend Rows */
+.days-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.day-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-left: 5px solid #3498db;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.day-name {
+    font-weight: 600;
+    width: 100px;
+    color: #2c3e50;
+}
+
+.day-input {
+    width: 120px !important;
+}
+
+.day-status {
+    color: #7f8c8d;
+    font-size: 14px;
+    font-style: italic;
+}
